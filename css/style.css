@@ -90,6 +90,15 @@ main {
 	text-align: center;
 	font-size: larger;
 }
+.grid-item-btn {
+	background-color: #474747;
+	padding: 15px;
+	border-radius: 5px;
+	width: 50px;
+	height: 20px;
+	text-align: center;
+	font-size: larger;
+}
 #btn-delete-lsb {
 	background-color: #e18c14;
 }
