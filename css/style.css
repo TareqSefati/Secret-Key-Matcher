@@ -129,9 +129,11 @@ main {
 	#password-section {
 		width: 400px;
 		height: 200px;
+		border-radius: 5px;
 	}
 	#matching-section {
 		width: 400px;
+		border-radius: 5px;
 	}
 	.grid-container {
 		display: grid;
@@ -162,10 +164,12 @@ main {
 	#password-section {
 		width: 300px;
 		height: 150px;
+		border-radius: 5px;
 	}
 	#matching-section {
 		width: 300px;
 		height: 100%;
+		border-radius: 5px;
 	}
 	.grid-container {
 		display: grid;
