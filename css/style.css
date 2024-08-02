@@ -5,7 +5,6 @@
 .center {
 	margin: auto;
 	display: flex;
-	/* flex-direction: column; */
 	justify-content: center;
 	align-items: center;
 }
@@ -20,8 +19,6 @@ main {
 	display: flex;
 	color: white;
 	gap: 4px;
-	/* width: 60%;
-	height: 50vh; */
 }
 #password-section {
 	width: 500px;
@@ -40,42 +37,47 @@ main {
 	flex-direction: column;
 }
 #btn-generate-key {
-	width: 200px;
-	height: 60px;
+	width: 180px;
+	height: 50px;
 	background-color: #006ce0;
 	border-radius: 5px;
-	/* border: 1px solid white; */
 	border: 0px;
 	color: white;
-	font-size: large;
+	font-size: medium;
+	font-weight: 800;
 }
 
 .secret-number {
-	width: 200px;
-	height: 60px;
+	width: 180px;
+	height: 50px;
 	background-color: #474747;
 	border-radius: 5px;
 	border: 2px solid white;
 	font-size: xx-large;
 	text-align: center;
-	/* padding-top: 15px; */
-	line-height: 60px;
+	line-height: 50px;
 }
 
 .pin-container {
 	display: flex;
-	/* justify-content: center; */
 	align-items: center;
-	/* margin: auto; */
 	margin-bottom: 30px;
 	gap: 30px;
+}
+.pin-input {
+	background-color: #474747;
+	border-radius: 5px;
+	border: 2px solid white;
+	font-size: xx-large;
+	text-align: center;
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
 }
 
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	/* grid-template-rows: repeat(4, 1fr); */
-	/* grid-auto-flow: row; */
 	gap: 10px;
 }
 
@@ -87,7 +89,6 @@ main {
 	height: 20px;
 	text-align: center;
 	font-size: larger;
-	/* border: 1px solid #ddd; */
 }
 #btn-delete-lsb {
 	background-color: #e18c14;
@@ -105,4 +106,71 @@ main {
 }
 #info {
 	margin-top: 20px;
+}
+
+/* for medium size device */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+	body {
+		width: 100%;
+		height: 100%;
+	}
+	main {
+		flex-direction: column;
+	}
+	#password-section {
+		width: 400px;
+		height: 200px;
+	}
+	#matching-section {
+		width: 400px;
+	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 8px;
+	}
+	.pin-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.pin-input {
+		width: 180px;
+		height: 50px;
+		line-height: 50px;
+	}
+}
+
+/* for small device */
+@media screen and (max-width: 600px) {
+	body {
+		width: 100%;
+		height: 100%;
+	}
+	main {
+		flex-direction: column;
+	}
+	#password-section {
+		width: 300px;
+		height: 150px;
+	}
+	#matching-section {
+		width: 300px;
+		height: 100%;
+	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 5px;
+	}
+	.pin-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.pin-input {
+		width: 150px;
+		height: 50px;
+		line-height: 50px;
+	}
 }
